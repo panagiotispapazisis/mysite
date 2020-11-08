@@ -16,7 +16,7 @@ class Footer extends Component {
             <h1 className="social-header">Social Follow</h1>
           </div>
           <div className="row social">
-            <a className="social" href="https://www.facebook.com/diane.pope.56">
+            <a className="social" href="">
               <AiFillFacebook
                 size={50}
                 style={{
@@ -25,10 +25,7 @@ class Footer extends Component {
               />
             </a>
 
-            <a
-              className="social"
-              href="https://www.instagram.com/athina_christidou/?utm_source=ig_embed&utm_campaign=loading&hl=el"
-            >
+            <a className="social" href="">
               <AiFillInstagram
                 size={50}
                 style={{
@@ -45,10 +42,7 @@ class Footer extends Component {
               />
             </a>
 
-            <a
-              className="social"
-              href="https://www.linkedin.com/in/athina-christidou/?originalSubdomain=gr"
-            >
+            <a className="social" href="">
               <AiFillLinkedin
                 size={50}
                 style={{

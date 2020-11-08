@@ -24,8 +24,9 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-
-        <Footer></Footer>
+        <footer>
+          <Footer></Footer>
+        </footer>
       </div>
     </BrowserRouter>
   );
