@@ -1,5 +1,6 @@
 import React from "react";
 import Rating from "./Rating";
+import "../index.css";
 
 export default function Product(props) {
   const { product } = props;
@@ -10,7 +11,7 @@ export default function Product(props) {
       </a>
       <div className="card-body">
         <a href={`/product/${product._id}`}>
-          <h2>{product.name}</h2>
+          <h2 className="product name">{product.name}</h2>
         </a>
         <Rating
           rating={product.rating}

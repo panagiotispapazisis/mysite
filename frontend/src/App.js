@@ -3,6 +3,8 @@ import { BrowserRouter, Route } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import "./index.css";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <BrowserRouter>
@@ -10,7 +12,7 @@ function App() {
         <header className="row">
           <div>
             <a className="brand" href="/">
-              amazona
+              TEST SITE
             </a>
           </div>
           <div>
@@ -22,7 +24,8 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+
+        <Footer></Footer>
       </div>
     </BrowserRouter>
   );

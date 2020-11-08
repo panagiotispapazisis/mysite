@@ -22,21 +22,22 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-rows: 7rem 1fr 5rem;
   height: 100%;
 }
 header {
   grid-area: header;
-  background-color: #203040;
+  background-color: rgb(216, 99, 99);
 }
 main {
   grid-area: main;
   padding: 1rem;
+  background-color: rgb(245, 247, 247);
 }
 footer {
   grid-area: footer;
-  background-color: #203040;
-  color: #ffffff;
+  background-color: white;
+  color: black;
 }
 /* Common */
 h1 {
@@ -98,9 +99,7 @@ a.brand {
   justify-content: space-between;
   align-items: center;
 }
-.row.center {
-  justify-content: center;
-}
+
 .row.top {
   align-items: flex-start;
 }
@@ -128,7 +127,6 @@ img.large {
 /* Card */
 .card {
   border: 0.1rem #c0c0c0 solid;
-  background-color: #f8f8f8;
   border-radius: 0.5rem;
   margin: 1rem;
 }
@@ -155,4 +153,44 @@ img.large {
 }
 .error {
   color: #a02020;
+}
+.product.name {
+  color: black;
+}
+.card.product.name {
+  background-color: black;
+}
+div.card {
+  background-color: rgb(228, 228, 228);
+}
+
+.line {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.social-container {
+  background: #eee;
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+  cursor: pointer;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+.row.social {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.social-header {
+  margin-left: 46%;
+  font-weight: bold;
 }
